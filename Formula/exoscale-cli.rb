@@ -5,11 +5,11 @@
 class ExoscaleCli < Formula
   desc "Manage easily your Exoscale infrastructure from the command-line."
   homepage "https://exoscale.github.io/cli/"
-  version "1.59.0"
+  version "1.59.1"
 
   on_macos do
-    url "https://github.com/exoscale/cli/releases/download/v1.59.0/exoscale-cli_1.59.0_darwin_all.tar.gz"
-    sha256 "7d2751a20d378be69a5a835e0254df9a1f17f6139bc9fe0b3638518d1df63aa6"
+    url "https://github.com/exoscale/cli/releases/download/v1.59.1/exoscale-cli_1.59.1_darwin_all.tar.gz"
+    sha256 "6ac27c6836699f3c06415b0812289aba30941994bb0b254183ade062c24b9a0f"
 
     def install
       bin.install "exo"
@@ -21,8 +21,8 @@ class ExoscaleCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/exoscale/cli/releases/download/v1.59.0/exoscale-cli_1.59.0_linux_armv6.tar.gz"
-      sha256 "3326613a19794506bdb4e3107a92df0a3ee148691ceb09c64a0c2d1b1db91929"
+      url "https://github.com/exoscale/cli/releases/download/v1.59.1/exoscale-cli_1.59.1_linux_armv6.tar.gz"
+      sha256 "0d0509ffe2604dc219d0bd17ae28e853f1285c57e2e63202c286644e39dd3c3b"
 
       def install
         bin.install "exo"
@@ -32,8 +32,8 @@ class ExoscaleCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/exoscale/cli/releases/download/v1.59.0/exoscale-cli_1.59.0_linux_arm64.tar.gz"
-      sha256 "c423fa76c8de4c4e2d85b73e7fb6eeb8bc85f8c44b9eb11138cc152ad6a5fa0d"
+      url "https://github.com/exoscale/cli/releases/download/v1.59.1/exoscale-cli_1.59.1_linux_arm64.tar.gz"
+      sha256 "54341bc1ee859463f5a47f75d0feff0dc8d725da9badf97d0b50f15a813cd4d0"
 
       def install
         bin.install "exo"
@@ -43,8 +43,8 @@ class ExoscaleCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/exoscale/cli/releases/download/v1.59.0/exoscale-cli_1.59.0_linux_amd64.tar.gz"
-      sha256 "fd4060e5d6d86643bba9d8836da17683a65d62409679931e49f12376d4022e2b"
+      url "https://github.com/exoscale/cli/releases/download/v1.59.1/exoscale-cli_1.59.1_linux_amd64.tar.gz"
+      sha256 "7b44d4c5dd10d6ca8cb28424c9826ffc973470913f68cc20d95683efea51e9e0"
 
       def install
         bin.install "exo"
